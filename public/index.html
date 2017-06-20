@@ -1,0 +1,54 @@
+
+<!-- 1) NEED TO USE AS MAIN HTML PAGE WITH TECHCRUNCH ARTICLE TO SELECT
+2) ONCE SELECTED, DISPLAY FULL ARTICLE, WITH FORM AT BOTTOM TO LEAVE COMMENT (NAME AND COMMENT ONLY) -->
+
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>TechWeb Article Search</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>  
+<!-- need BootStrap CDN -->
+
+  </head>
+
+<!-- need code to pull in all data techcrunch, into its own full-screen tabe (easiest!?!?!)   -->
+
+
+<!-- pulled from 16.2 - index.html -->
+
+    <form action="/submit" method="post">
+    <h1>Hi User!</h1>
+    <h2>Enter a Note!</h2>
+      <input type="text" name="title" placeholder="Title">
+      <textarea type="text" name="body">Write Note Here</textarea>
+
+      <input type="submit">
+      <a href="/notes">See your notes!</a>
+      <a href="/user">See your profile!</a>
+      <a href="/populateduser">See your profile, populated with notes!</a>
+    </form>
+
+
+<!-- taken from 8.2 ACT 8 (unsolved) -->
+
+  <body>
+    <h1>Comments</h1>
+    <div id="userinput">
+        <p>Name</p>
+        <input type="text" id="name" />
+      <br>
+        <p>Comment</p>
+        <textarea id="comment"></textarea>
+      <div id="buttons">
+        <div id="actionbutton">
+          <button id="makenew">Submit</button>
+        </div>
+        <button id="clearall">Delete Comment</button>
+      </div>
+    </div>
+
+    <div id="results"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
